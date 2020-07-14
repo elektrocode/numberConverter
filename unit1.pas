@@ -12,14 +12,15 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    Button1: TButton;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Label1: TLabel;
+    ConvertBtn: TButton;
+    NumberInput: TEdit;
+    OctalOutput: TEdit;
+    HexOutput: TEdit;
+    Title: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    procedure NumberInputChange(Sender: TObject);
   private
 
   public
@@ -32,6 +33,15 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.NumberInputChange(Sender: TObject);
+var
+  UserInput : String;
+begin
+  UserInput := NumberInput.Text;
+end;
 
 end.
 

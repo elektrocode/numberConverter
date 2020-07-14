@@ -7,7 +7,7 @@ object Form1: TForm1
   ClientHeight = 376
   ClientWidth = 368
   LCLVersion = '2.0.6.0'
-  object Label1: TLabel
+  object Title: TLabel
     Left = 51
     Height = 32
     Top = 8
@@ -27,12 +27,13 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Edit1: TEdit
+  object NumberInput: TEdit
     Left = 52
     Height = 33
     Top = 88
     Width = 264
     Font.Height = -19
+    OnChange = NumberInputChange
     ParentFont = False
     TabOrder = 0
   end
@@ -46,7 +47,7 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Edit2: TEdit
+  object OctalOutput: TEdit
     Left = 52
     Height = 33
     Top = 176
@@ -65,7 +66,7 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Edit3: TEdit
+  object HexOutput: TEdit
     Left = 52
     Height = 33
     Top = 264
@@ -74,7 +75,7 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 2
   end
-  object Button1: TButton
+  object ConvertBtn: TButton
     Left = 139
     Height = 38
     Top = 320
