@@ -1,8 +1,87 @@
 object Form1: TForm1
   Left = 2051
-  Height = 240
+  Height = 376
   Top = 111
-  Width = 320
-  Caption = 'Form1'
+  Width = 368
+  Caption = 'Number Conversion Tool'
+  ClientHeight = 376
+  ClientWidth = 368
   LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 51
+    Height = 32
+    Top = 8
+    Width = 267
+    Caption = 'Number Conversion Tool'
+    Font.Height = -24
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 102
+    Height = 25
+    Top = 56
+    Width = 165
+    Caption = 'Enter Your Number:'
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 52
+    Height = 33
+    Top = 88
+    Width = 264
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label3: TLabel
+    Left = 59
+    Height = 25
+    Top = 224
+    Width = 250
+    Caption = 'Your Number In Hexadecimal:'
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 52
+    Height = 33
+    Top = 176
+    Width = 264
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Label4: TLabel
+    Left = 93
+    Height = 25
+    Top = 136
+    Width = 182
+    Caption = 'Your Number In Octal'
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit3: TEdit
+    Left = 52
+    Height = 33
+    Top = 264
+    Width = 264
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 139
+    Height = 38
+    Top = 320
+    Width = 91
+    Caption = 'Convert'
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 3
+  end
 end
